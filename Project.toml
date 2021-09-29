@@ -1,0 +1,19 @@
+name = "wget2_jll"
+uuid = "8726a5da-ff56-5c52-916d-726e18caca27"
+version = "2.0.0+0"
+
+[deps]
+JLLWrappers = "692b3bcd-3c85-4b1f-b108-f13ce0eb3210"
+Gettext_jll = "78b55507-aeef-58d4-861c-77aaff3498b1"
+Pkg = "44cfe95a-1eb2-52ea-b672-e2afdf69b78f"
+OpenSSL_jll = "458c3c95-2e84-50aa-8efc-19380b2a3a95"
+Nettle_jll = "4c82536e-c426-54e4-b420-14f461c4ed8b"
+Libdl = "8f399da3-3557-5675-b5ff-fb832c97cbdb"
+GnuTLS_jll = "0951126a-58fd-58f1-b5b3-b08c7c4a876d"
+Artifacts = "56f22d72-fd6d-98f1-02f0-08ddc0907c33"
+
+[compat]
+JLLWrappers = "1.2.0"
+julia = "1.6"
+Gettext_jll = "=0.21.0"
+Nettle_jll = "~3.7.2"
