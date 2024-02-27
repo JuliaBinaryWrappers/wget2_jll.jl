@@ -6,13 +6,13 @@ using Gettext_jll
 using Nettle_jll
 using OpenSSL_jll
 JLLWrappers.@generate_wrapper_header("wget2")
-JLLWrappers.@declare_library_product(libwget, "libwget-1.dll")
+JLLWrappers.@declare_library_product(libwget, "libwget-2.dll")
 JLLWrappers.@declare_executable_product(wget2)
 function __init__()
     JLLWrappers.@generate_init_header(GnuTLS_jll, Gettext_jll, Nettle_jll, OpenSSL_jll)
     JLLWrappers.@init_library_product(
         libwget,
-        "bin\\libwget-1.dll",
+        "bin\\libwget-2.dll",
         RTLD_LAZY | RTLD_DEEPBIND,
     )
 
