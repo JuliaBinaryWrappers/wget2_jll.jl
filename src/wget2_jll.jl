@@ -5,5 +5,5 @@ using Base: UUID
 import JLLWrappers
 
 JLLWrappers.@generate_main_file_header("wget2")
-JLLWrappers.@generate_main_file("wget2", UUID("8726a5da-ff56-5c52-916d-726e18caca27"))
+JLLWrappers.@generate_main_file("wget2", Base.UUID("8726a5da-ff56-5c52-916d-726e18caca27"))
 end  # module wget2_jll

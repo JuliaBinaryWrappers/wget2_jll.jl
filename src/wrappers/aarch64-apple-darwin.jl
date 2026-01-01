@@ -12,13 +12,13 @@ using brotli_jll
 using libidn2_jll
 using libpsl_jll
 JLLWrappers.@generate_wrapper_header("wget2")
-JLLWrappers.@declare_library_product(libwget, "@rpath/libwget.3.dylib")
+JLLWrappers.@declare_library_product(libwget, "@rpath/libwget.4.dylib")
 JLLWrappers.@declare_executable_product(wget2)
 function __init__()
     JLLWrappers.@generate_init_header(Bzip2_jll, Gettext_jll, OpenSSL_jll, PCRE2_jll, XZ_jll, Zlib_jll, Zstd_jll, brotli_jll, libidn2_jll, libpsl_jll)
     JLLWrappers.@init_library_product(
         libwget,
-        "lib/libwget.3.dylib",
+        "lib/libwget.4.dylib",
         RTLD_LAZY | RTLD_DEEPBIND,
     )
 
